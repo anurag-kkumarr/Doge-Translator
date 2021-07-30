@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+:root {
+    --black: #333333;
+}
+
+body {
+    font-family: 'MonteCarlo', cursive;;
+}
+
+#output-div {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
