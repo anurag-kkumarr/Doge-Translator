@@ -1,17 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 :root {
+    --primary: #b563e5;
     --black: #333333;
 }
 
 body {
-    font-family: 'MonteCarlo', cursive;;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'MonteCarlo', cursive;*/
+    color: var(--black);
 }
 
-#output-div {
-    text-decoration: none;
-    display: block;
+nav {
+    background-color: var(--primary);
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'MonteCarlo', cursive;
+}
+
+main {
+    margin: auto;
     padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid black;
+    max-width: var(--width-break);
+}
+
+#translation {
+    color: var(--primary);
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+    border-radius: 0.5rem;   
+}
+
+
+#output-div {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow:scroll;
+    border: 1px solid var(--black);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
 }
